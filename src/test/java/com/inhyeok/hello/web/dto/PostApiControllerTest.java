@@ -1,8 +1,7 @@
-package com.inhyeok.hello.dto;
+package com.inhyeok.hello.web.dto;
 
 import com.inhyeok.hello.domain.posts.Posts;
 import com.inhyeok.hello.domain.posts.PostsRepository;
-import com.inhyeok.hello.web.dto.PostsSaveRequestDto;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +16,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.atomicIntegerFieldUpdater;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

@@ -1,5 +1,4 @@
-package com.inhyeok.hello.dto;
-import com.inhyeok.hello.web.dto.HelloResponseDto;
+package com.inhyeok.hello.web.dto;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
