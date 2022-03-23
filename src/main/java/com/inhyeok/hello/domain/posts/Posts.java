@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Entity
 // DB 테이블에 링크되는 클래스이다. 엔티티만 붙이면 자동으로 테이블에 들어간다.
-public class Posts {
+public class Posts extends BaseTimeEntity{
     @Id
     //Id같은 경우는 데이터 베이스의 번호가 중요한데, 그런걸 자동으로 해줌
     //이 Id라고 하면, Primary Key임. (배웠던거 기억나지?) - 기준이 되는 키
