@@ -1,7 +1,11 @@
 package com.inhyeok.hello.domain.posts;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import java.util.List;
 
 public interface PostsRepository extends JpaRepository<Posts, Long>{
+    @Query("SELECT p FROM Posts p ORDER BY p.id DESC")
+    List<Posts> findAllDesc();
 }
 //패키지에 있는 녀석을 Repository가 관리해줌. jpa를 상속했는데, jpa는 저장해야 할 항목을 알아서
 //db에 넣어준다. 별거없다.
